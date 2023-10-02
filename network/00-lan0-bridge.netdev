@@ -1,0 +1,7 @@
+# /etc/systemd/network/00-lan0-bridge.netdev
+# create lan0 bridge
+#
+[NetDev]
+Name=lan0
+Kind=bridge
+

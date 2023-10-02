@@ -1,0 +1,9 @@
+# /etc/systemd/network/20-port2-slave.link
+# rename eth1 to port2
+#
+[Match]
+# use 'dmesg | grep igc | grep MAC' to find the correct Path= or MACAddress= to use
+Path=pci-0000:02:00.0
+# MACAddress=xx:xx:xx:xx:xx:xx
+[Link]
+Name=port2

@@ -1,0 +1,3 @@
+# /etc/systemd/network/99-default.link
+# overrides /lib/systemd/network/99-default.link
+# leave this file blank

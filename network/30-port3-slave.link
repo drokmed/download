@@ -1,0 +1,9 @@
+# /etc/systemd/network/30-port3-slave.link
+# rename eth2 to port3
+#
+[Match]
+# use 'dmesg | grep igc | grep MAC' to find the correct Path= or MACAddress= to use
+Path=pci-0000:03:00.0
+# MACAddress=xx:xx:xx:xx:xx:xx
+[Link]
+Name=port3

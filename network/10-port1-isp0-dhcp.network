@@ -1,0 +1,9 @@
+# /etc/systemd/network/10-port1-isp0-dhcp.network
+# configure isp0 to use dhcp (gets from isp)
+#
+[Match]
+Name=isp0
+[Network]
+DHCP=yes
+IPForward=ipv4
+

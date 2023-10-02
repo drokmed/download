@@ -1,0 +1,8 @@
+# /etc/systemd/network/40-port4-slave.network
+# configure port4 to connect to lan0 bridge
+#
+[Match]
+Name=port4
+[Network]
+Bridge=lan0
+

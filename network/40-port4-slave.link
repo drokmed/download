@@ -1,0 +1,9 @@
+# /etc/systemd/network/40-port4-slave.link
+# rename eth3 to port4
+#
+[Match]
+# use 'dmesg | grep igc | grep MAC' to find the correct Path= or MACAddress= to use
+Path=pci-0000:04:00.0
+# MACAddress=xx:xx:xx:xx:xx:xx
+[Link]
+Name=port4

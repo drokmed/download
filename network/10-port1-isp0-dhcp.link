@@ -1,0 +1,9 @@
+# /etc/systemd/network/10-port1-isp0-dhcp.link
+# rename eth0 to isp0
+#
+[Match]
+# use 'dmesg | grep igc | grep MAC' to find the correct Path= or MACAddress= to use
+Path=pci-0000:01:00.0
+# MACAddress=xx:xx:xx:xx:xx:xx
+[Link]
+Name=isp0

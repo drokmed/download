@@ -1,0 +1,8 @@
+# /etc/systemd/network/30-port3-slave.network
+# configure port3 to connect to lan0 bridge
+#
+[Match]
+Name=port3
+[Network]
+Bridge=lan0
+

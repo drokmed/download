@@ -1,0 +1,10 @@
+# /etc/systemd/network/00-lan0-bridge.network
+# assign static ip to bridge
+# all lan ports & wifi port will connect (enslaved) to bridge
+#
+[Match]
+Name=lan0
+[Network]
+Address=172.16.1.1/24
+# do not include any gateway, route or dns entries, let system handle it
+# do not turn on dhcp server, let the dns server (container) handle it
