@@ -1,0 +1,9 @@
+This is the default debian linux 12 bookworm .bashrc file for non-root user, modified to turn on color, and adds a few aliases
+
+Download the bashrc file to your /home/user directory
+
+cd ~
+wget http://github.com/drokmed/download/user/bashrc
+cp .bashrc .bashrc.save
+cp bashrc .bashrc
+su - user
