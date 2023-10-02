@@ -7,3 +7,4 @@ wget http://github.com/drokmed/download/user/bashrc
 cp .bashrc .bashrc.save
 cp bashrc .bashrc
 su - user
+
